@@ -4,15 +4,13 @@ project:
   
 website:
   page-navigation: true
-  title: "Yujun Lian"
-  site-url: https://lianyujun.github.io
-  favicon: images/site-logo.png
-  repo-url: https://github.com/lianyujun/lianyujun.github.io
+  title: "Jiahao Zhang"
+  site-url: https://zhangjiahao.github.io
+  favicon: images/logo.jpg
+  repo-url: https://github.com/zhangjh358/zhangjiahao.github.io
   repo-actions: [edit, issue]
   
   page-footer:
-    left: |
-      [lianxh.cn](https://www.lianxh.cn)<br>
     right: |
       Made with [Quarto](https://quarto.org/)<br>
     
@@ -24,16 +22,10 @@ website:
         href: index.qmd
       - text: "Publications"
         href: publications.qmd
-      - text: "Books"
-        href: books.qmd
-      - text: "Blogs"
-        href: blog.qmd
-      - text: "Codes"
-        href: codes.qmd
       - text: "中文"
         href: Chinese.qmd
       - text: "CV"
-        href: CV.pdf
+        href: CVZJH.pdf
 
 format:
   html:
