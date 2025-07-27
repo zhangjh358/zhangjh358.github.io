@@ -14,5 +14,5 @@ editor: visual
 ## 工作论文
 
 1.  Zhihong Huang, Caiping Wang, Jiahao Zhang（Corresponding author）,   2025,《Short Selling and Firm Real Options Value: Evidence from China》，《Research in International Business and Finance》外审。
-2.   黄志宏、王彩萍、张家豪（通讯作者），2025，《证券监管约束与金融市场稳定——来自注册制改革的经验证据》。
-3.   张家豪、王彩萍、黄志宏，2025，《内卷式竞争下的企业高质量发展之道——来自企业并购的经验证据》。
+2.  黄志宏、王彩萍、张家豪（通讯作者），2025，《证券监管约束与金融市场稳定——来自注册制改革的经验证据》。
+3.  张家豪、王彩萍、黄志宏，2025，《内卷式竞争下的企业高质量发展之道——来自企业并购的经验证据》。
