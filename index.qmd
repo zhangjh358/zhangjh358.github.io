@@ -1,6 +1,9 @@
 ---
 title: "Jiahao Zhang"
 image: images/zhangjh.jpg
+editor: 
+  markdown: 
+    wrap: 72
 about:
   id: hero-heading
   template: trestles
