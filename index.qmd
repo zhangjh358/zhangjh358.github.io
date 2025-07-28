@@ -1,6 +1,6 @@
 ---
 title: "Jiahao Zhang"
-image: images/ZHANGJIAHAO.jpg
+image: images/zhangjh.jpg
 about:
   id: hero-heading
   template: trestles
