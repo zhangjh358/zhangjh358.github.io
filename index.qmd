@@ -1,6 +1,6 @@
 ---
 title: "Jiahao Zhang"
-image: images/zhangjh.jpg
+image: images/zhangjh2.jpg
 editor: 
   markdown: 
     wrap: 72
