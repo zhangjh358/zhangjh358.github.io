@@ -7,6 +7,8 @@ about:
   image-width: 12em
   image-shape: round
   links:
+    - icon: location
+      text: Guangzhou, China
     - icon: mailbox
       text: zhangjh358@mail2.sysu.edu.cn
       href: mailto:zhangjh358@mail2.sysu.edu.cn

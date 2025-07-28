@@ -5,9 +5,9 @@ project:
 website:
   page-navigation: true
   title: "Jiahao Zhang"
-  site-url: https://zhangjiahao.github.io
+  site-url: https://zhangjh358.github.io
   favicon: images/logo.jpg
-  repo-url: https://github.com/zhangjh358/zhangjiahao.github.io
+  repo-url: https://github.com/zhangjh358/zhangjh358.github.io
   repo-actions: [edit, issue]
   
   page-footer:
@@ -20,8 +20,6 @@ website:
     right: 
       - text: "Home"
         href: index.qmd
-      - text: "Publications"
-        href: publications.qmd
       - text: "中文"
         href: Chinese.qmd
       - text: "CV"
