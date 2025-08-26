@@ -13,8 +13,8 @@ about:
     - icon: location
       text: Guangzhou, China
     - icon: mailbox
-      text: zhangjh358@mail2.sysu.edu.cn
-      href: mailto:zhangjh358@mail2.sysu.edu.cn
+      text: zhangjh358@stu.sysu.edu.cn
+      href: mailto:zhangjh358@stu.sysu.edu.cn
     - icon: github
       text: zhangjh358
       href: https://github.com/zhangjh358
