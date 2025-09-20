@@ -34,7 +34,7 @@ about:
 
 ::: {#hero-heading}
 
-Hello! I am a Ph.D. candidate at the International School of Business & Finance, Sun Yat-sen University, supervised by Prof. Caiping Wang. I am also a visiting Ph.D. student at Nanyang Technological University (Nanyang Business School) in Singapore, under the supervision of Asst. Prof. Zeng Yachang. Before this, I earned my bachelor's degree from Dongbei University of Finance and Economics.
+Hello! I am a Ph.D. candidate at the International School of Business & Finance, Sun Yat-sen University, supervised by Prof. Caiping Wang. I am also a visiting Ph.D. student at Nanyang Technological University (Nanyang Business School) in Singapore. Before this, I earned my bachelor's degree from Dongbei University of Finance and Economics.
 
 My current research interests primarily include:
 
