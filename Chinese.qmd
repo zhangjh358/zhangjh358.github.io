@@ -1,6 +1,6 @@
 ---
 title: "中文简历"
-image: images/zhangjh6.jpg
+image: images/精修STP.jpg
 about:
   id: hero-heading
   template: trestles
