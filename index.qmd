@@ -21,9 +21,6 @@ about:
     - icon: fingerprint
       text: ORCID
       href: https://orcid.org/0009-0009-2153-5630
-    - icon: brands douyin
-      text: 抖音
-      href: https://www.douyin.com/user/self?from_tab_name=main
     - icon: brands xing
       text: 小红书
       href: https://www.xiaohongshu.com/user/profile/600060780000000001005d2e
