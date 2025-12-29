@@ -31,7 +31,7 @@ about:
 
 ::: {#hero-heading}
 
-Hello! I am a Ph.D. candidate at the International School of Business & Finance, Sun Yat-sen University, supervised by Prof. Caiping Wang. I am also a visiting Ph.D. student at Nanyang Technological University (Nanyang Business School) in Singapore. Before this, I earned my bachelor's degree from Dongbei University of Finance and Economics.
+Hello! I am a Ph.D. candidate at the Advanced Institute of Finance, Sun Yat-sen University, supervised by Prof. Caiping Wang. I am also a visiting Ph.D. student at Nanyang Technological University (Nanyang Business School) in Singapore. Before this, I earned my bachelor's degree from Dongbei University of Finance and Economics.
 
 My current research interests primarily include:
 
@@ -41,7 +41,7 @@ My current research interests primarily include:
 
 - Initial Public Offering
 
-- Securities Regulation
+- Capital Market
 
 I have published three academic papers in Journal of Financial Research (金融研究), Chinese Journal of Management (管理学报), and Science & Technology Progress and Policy (科技进步与对策). I was awarded the National Scholarship for Graduate Students in 2024 and have received the President’s Scholarship of Sun Yat-sen University multiple times.
 
