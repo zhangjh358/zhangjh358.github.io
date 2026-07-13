@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Zheng Li(李峥)"
+title                    : "Jiahao Zhang(张家豪)"
 description              : 
-repository               : "lizheng1999/lizheng1999.github.io"
+repository               : "zhangjh358/zhangjh358.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -21,14 +21,14 @@ baidu_site_verification  : code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "Zheng Li (李峥)"
-  avatar           : "images/lizheng.jpg"
-  bio              : "PhD in Corporate Finance"
+  name             : "Jiahao Zhang(张家豪)"
+  avatar           : "images/精修STP.jpg"
+  bio              : "PhD in Applied Economics"
   location         : 
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=pHcF1g8AAAAJ&view_op=list_works&gmla=APjjwubz26urCoj-FL_cISZ4dH5-DFkYcGcZMW1DjJjt91A2qjP8nHRHLdHsYNezZoyj3LpNnFilMGYT1IDjcVR-5bq-vdVV8-fhMQbbitM"
-  email            : "lzz2021@email.cufe.edu.cn"
+  googlescholar    : 
+  email            : "zhangjh358@mail2.sysu.edu.cn"
   researchgate     : 
   uri              :
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "lizheng1999"
+  github           : "zhangjh358"
   google_plus      :
   keybase          :
   instagram        :
@@ -45,7 +45,7 @@ author:
   lastfm           :
   linkedin         :
   dblp             :
-  orcid            : "https://orcid.org/0009-0008-1141-9401"
+  orcid            : "https://orcid.org/0009-0009-2153-5630"
   pinterest        :
   soundcloud       :
   stackoverflow    : 
@@ -53,7 +53,7 @@ author:
   tumblr           :
   twitter          : 
   vine             :
-  rednote          : "https://xhslink.com/m/14WQFArbYMj"
+  rednote          : "https://xhslink.com/m/8gDLeDwajL8"
   xing             :
   youtube          :
   wikipedia        :
