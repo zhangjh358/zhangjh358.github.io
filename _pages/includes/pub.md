@@ -9,10 +9,10 @@
 
 - **张家豪**，黄志宏．2026．证券监管约束与资本市场稳定——来自注册制改革的经验证据．*《会计研究》*录用待刊.
 
-# 📝 Working Paper （外审阶段）
+# 📝 Selected Working Paper
 
-- 王彩萍，赵晨语，**张家豪**，黄志宏．2026．国有企业如何提升在战略性新兴领域的创新绩效？——基于企业并购的视角．*《财经研究》*外审.
+- 王彩萍，赵晨语，**张家豪**，黄志宏．2026．国有企业如何提升在战略性新兴领域的创新绩效？——基于企业并购的视角．*《财经研究》*外审修改.
 
-- 黄志宏，王彩萍，**张家豪**．2026．“内卷式”竞争与企业并购决策.*《经济管理》*外审.
+- 黄志宏，王彩萍，**张家豪**(通讯)．2026．“内卷式”竞争与企业并购决策.*《经济管理》*外审修改.
 
-- 黄志宏，王彩萍，**张家豪**．2026．Short Selling and Firm Real Options Value: Evidence from China．*《Journal of Asian Economics》*外审.
+- 黄志宏，王彩萍，**张家豪**(通讯)．2026．Short Selling and Firm Real Options Value: Evidence from China．*《Journal of Asian Economics》*外审修改.
