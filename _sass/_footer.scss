@@ -9,11 +9,11 @@
   margin-right: 0;
   width: 100%;
   clear: both;
-  /* sticky footer fix start */
-  position: absolute;
-  bottom: 0em;
+  // Keep the footer in normal document flow. An absolutely positioned footer
+  // overlaps the final lines when its content wraps or grows in height.
+  position: relative;
+  bottom: auto;
   height: auto;
-  /* sticky footer fix end */
   margin-top: 3em;
   color: #fff;
   -webkit-animation: intro 0.3s both;
