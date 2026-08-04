@@ -1,0 +1,25 @@
+<footer class="page__footer" role="contentinfo">
+  <div class="page__footer-inner">
+    <p class="page__footer-copyright">
+      &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.
+    </p>
+
+    <div class="page__footer-meta">
+      <div class="visitor-counters" aria-label="网站访问量">
+        <p class="visitor-counter">
+          <span>总访问量</span>
+          <strong id="busuanzi_site_pv" aria-live="polite">—</strong>
+        </p>
+        <span class="visitor-counter-divider" aria-hidden="true">·</span>
+        <p class="visitor-counter">
+          <span>今日访问量</span>
+          <strong id="busuanzi_today_pv" aria-live="polite">—</strong>
+        </p>
+      </div>
+
+      <p class="page__footer-updated">
+        最后更新：{{ site.time | date: '%Y 年 %-m 月' }}
+      </p>
+    </div>
+  </div>
+</footer>
