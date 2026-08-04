@@ -18,7 +18,7 @@ redirect_from:
 
 <section class="section shell"><div class="heading"><small>01</small><h2 data-en="Education">教育经历</h2></div><div class="timeline">
   <article><div class="school-logo"><img src="{{ '/images/schools/ntu.svg' | relative_url }}" alt="Nanyang Technological University logo"></div><time>2025.08—2026.08</time><h3 data-en="Nanyang Business School, Nanyang Technological University">南洋理工大学南洋商学院</h3><p data-en="Visiting PhD Student in Accounting">会计系联合培养博士生</p></article>
-  <article><div class="school-logo sysu-lockup"><img src="{{ '/images/schools/sysu.png' | relative_url }}" alt="中山大学校徽"><span><b>中山大学</b><small>SUN YAT-SEN UNIVERSITY</small></span></div><time>2022.09—2027.06</time><h3 data-en="Advanced Institute of Finance, Sun Yat-sen University">中山大学高级金融研究院</h3><p data-en="PhD in Economics">经济学博士</p></article>
+  <article><div class="school-logo"><img src="{{ '/images/schools/sysu-lockup.png' | relative_url }}" alt="中山大学 Sun Yat-sen University 校徽"></div><time>2022.09—2027.06</time><h3 data-en="Advanced Institute of Finance, Sun Yat-sen University">中山大学高级金融研究院</h3><p data-en="PhD in Economics">经济学博士</p></article>
   <article><div class="school-logo"><img src="{{ '/images/schools/dufe.png' | relative_url }}" alt="东北财经大学校徽"></div><time>2018.09—2022.05</time><h3 data-en="School of Finance, Dongbei University of Finance and Economics">东北财经大学金融学院</h3><p data-en="Bachelor of Economics">经济学学士</p></article>
 </div></section>
 
