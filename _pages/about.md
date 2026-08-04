@@ -30,7 +30,6 @@ redirect_from:
 </div><h3 class="subtitle" data-en="Working Papers">工作论文</h3><div class="papers">
   <article class="paper"><span class="badge review" data-en="Under Review">外审修改</span><div><h3 data-en="How Can State-owned Enterprises Improve Innovation Performance in Strategic Emerging Industries? An M&amp;A Perspective">国有企业如何提升在战略性新兴领域的创新绩效？——基于企业并购的视角</h3><p data-en="Caiping Wang, Chenyu Zhao, Jiahao Zhang, Zhihong Huang">王彩萍，赵晨语，<strong>张家豪</strong>，黄志宏</p><p data-en="Journal of Finance and Economics, revise and resubmit">《财经研究》外审修改</p></div></article>
   <article class="paper"><span class="badge review" data-en="Under Review">外审修改</span><div><h3 data-en="Involution-style Competition and Corporate M&amp;A Decisions">“内卷式”竞争与企业并购决策</h3><p data-en="Zhihong Huang, Caiping Wang, Jiahao Zhang (Corresponding Author)">黄志宏，王彩萍，<strong>张家豪（通讯）</strong></p><p data-en="Business Management Journal, revise and resubmit">《经济管理》外审修改</p></div></article>
-  <article class="paper"><span class="badge review" data-en="Under Review">外审修改</span><div><h3>Short Selling and Firm Real Options Value: Evidence from China</h3><p>Zhihong Huang, Caiping Wang, <strong>Jiahao Zhang (Corresponding)</strong></p><p>Journal of Asian Economics, under review</p></div></article>
 </div></div></section>
 
 <section id="projects" class="section shell"><div class="heading"><small>03</small><h2 data-en="Research Projects">科研项目</h2></div><div class="projects">
