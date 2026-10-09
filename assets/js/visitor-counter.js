@@ -1,10 +1,11 @@
 (() => {
+  const historicalPageViews = 1400;
   const sitePv = document.getElementById('busuanzi_site_pv');
   const siteUv = document.getElementById('busuanzi_site_uv');
   if (!sitePv && !siteUv) return;
 
   const render = (pv, uv) => {
-    if (sitePv && pv != null) sitePv.textContent = pv;
+    if (sitePv && pv != null) sitePv.textContent = historicalPageViews + Number(pv);
     if (siteUv && uv != null) siteUv.textContent = uv;
   };
 
