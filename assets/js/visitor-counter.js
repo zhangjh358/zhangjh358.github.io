@@ -12,9 +12,17 @@
     if (todayPv && today != null) todayPv.textContent = today;
   };
 
-  const markTodayUnavailable = () => {
-    if (todayPv) todayPv.textContent = '暂不可用';
-  };
+  const dateParts = new Intl.DateTimeFormat('en', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).formatToParts(new Date());
+  const datePart = (type) => dateParts.find((part) => part.type === type).value;
+  const today = `${datePart('year')}-${datePart('month')}-${datePart('day')}`;
+  const todayCacheKey = `daily-page-views-${today}`;
+  const cachedToday = Number(sessionStorage.getItem(todayCacheKey));
+  render(null, Number.isFinite(cachedToday) && cachedToday > 0 ? cachedToday + 1 : 1);
 
   const loadTotalPageViews = () => {
     const callback = `BusuanziFallback_${Date.now()}`;
@@ -41,25 +49,15 @@
     document.head.appendChild(script);
   };
 
-  const controller = new AbortController();
-  const timer = window.setTimeout(() => controller.abort(), 1500);
   loadTotalPageViews();
-  fetch('https://cdn.busuanzi.cc/api.php', {
-    method: 'POST',
-    body: JSON.stringify({ url: location.href, referrer: document.referrer }),
-    signal: controller.signal
-  })
+  fetch(`https://counterapi.com/api/zhangjh358.github.io/view/daily-${today}?noFormatting=true`)
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
     })
     .then((data) => {
-      window.clearTimeout(timer);
-      render(null, data.busuanzi_today_pv);
-      if (data.busuanzi_today_pv == null) markTodayUnavailable();
+      render(null, data.value);
+      sessionStorage.setItem(todayCacheKey, data.value);
     })
-    .catch(() => {
-      window.clearTimeout(timer);
-      markTodayUnavailable();
-    });
+    .catch(() => {});
 })();
