@@ -20,9 +20,24 @@
   }).formatToParts(new Date());
   const datePart = (type) => dateParts.find((part) => part.type === type).value;
   const today = `${datePart('year')}-${datePart('month')}-${datePart('day')}`;
-  const todayCacheKey = `daily-page-views-${today}`;
-  const cachedToday = Number(sessionStorage.getItem(todayCacheKey));
-  render(null, Number.isFinite(cachedToday) && cachedToday > 0 ? cachedToday : 1);
+  const dailyStateKey = 'visitor-counter-daily-state';
+
+  const renderTotalAndToday = (total) => {
+    const value = Number(total);
+    if (!Number.isFinite(value)) return;
+    render(value, null);
+    let state;
+    try {
+      state = JSON.parse(localStorage.getItem(dailyStateKey));
+    } catch (_) {
+      state = null;
+    }
+    if (!state || state.date !== today || !Number.isFinite(state.baseTotal) || state.baseTotal > value) {
+      state = { date: today, baseTotal: value };
+    }
+    localStorage.setItem(dailyStateKey, JSON.stringify(state));
+    render(null, value - state.baseTotal + 1);
+  };
 
   const loadTotalPageViews = () => {
     const callback = `BusuanziFallback_${Date.now()}`;
@@ -35,7 +50,7 @@
 
     window[callback] = (data) => {
       window.clearTimeout(timer);
-      render(data.site_pv, null);
+      renderTotalAndToday(data.site_pv);
       script.remove();
       delete window[callback];
     };
@@ -50,14 +65,13 @@
   };
 
   loadTotalPageViews();
-  fetch(`https://counterapi.com/api/zhangjh358.github.io/view/daily-${today}?noFormatting=true`)
-    .then((response) => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.json();
-    })
-    .then((data) => {
-      render(null, data.value);
-      sessionStorage.setItem(todayCacheKey, data.value);
-    })
-    .catch(() => {});
+  const nextMidnight = Date.UTC(
+    Number(datePart('year')),
+    Number(datePart('month')) - 1,
+    Number(datePart('day')) + 1
+  ) - 8 * 60 * 60 * 1000;
+  window.setTimeout(() => {
+    localStorage.removeItem(dailyStateKey);
+    render(null, 0);
+  }, Math.max(0, nextMidnight - Date.now()));
 })();
