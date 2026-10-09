@@ -1,12 +1,19 @@
 (() => {
   const historicalPageViews = 1400;
   const sitePv = document.getElementById('busuanzi_site_pv');
-  const siteUv = document.getElementById('busuanzi_site_uv');
-  if (!sitePv && !siteUv) return;
+  const todayPv = document.getElementById('busuanzi_today_pv');
+  if (!sitePv && !todayPv) return;
 
-  const render = (pv, uv) => {
-    if (sitePv && pv != null) sitePv.textContent = historicalPageViews + Number(pv);
-    if (siteUv && uv != null) siteUv.textContent = uv;
+  const render = (pv, today) => {
+    if (sitePv && pv != null) {
+      const value = Number(pv);
+      sitePv.textContent = Number.isFinite(value) ? historicalPageViews + value : pv;
+    }
+    if (todayPv && today != null) todayPv.textContent = today;
+  };
+
+  const markTodayUnavailable = () => {
+    if (todayPv) todayPv.textContent = '暂不可用';
   };
 
   const fallback = () => {
@@ -15,18 +22,21 @@
     const timer = window.setTimeout(() => {
       script.remove();
       delete window[callback];
-      render('暂不可用', '暂不可用');
+      render('暂不可用', null);
+      markTodayUnavailable();
     }, 8000);
 
     window[callback] = (data) => {
       window.clearTimeout(timer);
-      render(data.site_pv, data.site_uv);
+      render(data.site_pv, null);
+      markTodayUnavailable();
       script.remove();
       delete window[callback];
     };
     script.onerror = () => {
       window.clearTimeout(timer);
-      render('暂不可用', '暂不可用');
+      render('暂不可用', null);
+      markTodayUnavailable();
       script.remove();
       delete window[callback];
     };
@@ -47,8 +57,8 @@
     })
     .then((data) => {
       window.clearTimeout(timer);
-      render(data.busuanzi_site_pv, data.busuanzi_site_uv);
-      if (data.busuanzi_site_pv == null || data.busuanzi_site_uv == null) fallback();
+      render(data.busuanzi_site_pv, data.busuanzi_today_pv);
+      if (data.busuanzi_site_pv == null || data.busuanzi_today_pv == null) fallback();
     })
     .catch(() => {
       window.clearTimeout(timer);
