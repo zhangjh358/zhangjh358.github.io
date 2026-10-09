@@ -22,7 +22,7 @@
   const today = `${datePart('year')}-${datePart('month')}-${datePart('day')}`;
   const todayCacheKey = `daily-page-views-${today}`;
   const cachedToday = Number(sessionStorage.getItem(todayCacheKey));
-  render(null, Number.isFinite(cachedToday) && cachedToday > 0 ? cachedToday + 1 : 1);
+  render(null, Number.isFinite(cachedToday) && cachedToday > 0 ? cachedToday : 1);
 
   const loadTotalPageViews = () => {
     const callback = `BusuanziFallback_${Date.now()}`;

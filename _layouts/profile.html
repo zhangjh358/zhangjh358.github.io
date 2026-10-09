@@ -26,7 +26,7 @@
   <main>{{ content }}</main>
   <a class="float-avatar" href="#about" aria-label="返回顶部"><img src="{{ '/images/精修STP.jpg' | relative_url }}" alt=""></a>
   <footer><div><span>&copy; {{ site.time | date:'%Y' }} 张家豪. All rights reserved.</span><span>总访问量 <b id="busuanzi_site_pv">加载中…</b>　·　今日访问量 <b id="busuanzi_today_pv">加载中…</b></span></div></footer>
-  <script src="{{ '/assets/js/visitor-counter.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/visitor-counter.js' | relative_url }}?v={{ site.github.build_revision | default: site.time | uri_escape }}" defer></script>
   {% include analytics.html %}
   <script src="{{ '/assets/js/profile.js' | relative_url }}" defer></script>
 </body>
