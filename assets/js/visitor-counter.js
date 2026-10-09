@@ -16,27 +16,24 @@
     if (todayPv) todayPv.textContent = '暂不可用';
   };
 
-  const fallback = () => {
+  const loadTotalPageViews = () => {
     const callback = `BusuanziFallback_${Date.now()}`;
     const script = document.createElement('script');
     const timer = window.setTimeout(() => {
       script.remove();
       delete window[callback];
       render('暂不可用', null);
-      markTodayUnavailable();
-    }, 8000);
+    }, 3000);
 
     window[callback] = (data) => {
       window.clearTimeout(timer);
       render(data.site_pv, null);
-      markTodayUnavailable();
       script.remove();
       delete window[callback];
     };
     script.onerror = () => {
       window.clearTimeout(timer);
       render('暂不可用', null);
-      markTodayUnavailable();
       script.remove();
       delete window[callback];
     };
@@ -45,7 +42,8 @@
   };
 
   const controller = new AbortController();
-  const timer = window.setTimeout(() => controller.abort(), 4500);
+  const timer = window.setTimeout(() => controller.abort(), 1500);
+  loadTotalPageViews();
   fetch('https://cdn.busuanzi.cc/api.php', {
     method: 'POST',
     body: JSON.stringify({ url: location.href, referrer: document.referrer }),
@@ -57,11 +55,11 @@
     })
     .then((data) => {
       window.clearTimeout(timer);
-      render(data.busuanzi_site_pv, data.busuanzi_today_pv);
-      if (data.busuanzi_site_pv == null || data.busuanzi_today_pv == null) fallback();
+      render(null, data.busuanzi_today_pv);
+      if (data.busuanzi_today_pv == null) markTodayUnavailable();
     })
     .catch(() => {
       window.clearTimeout(timer);
-      fallback();
+      markTodayUnavailable();
     });
 })();
